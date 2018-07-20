@@ -3,6 +3,8 @@ spring:
     name: 'forex-convert-service'
   main:
     banner-mode: 'off'
+  jackson:
+    default-property-inclusion: non_null
 server:
   port: ${PORT:9001}
   servlet:
